@@ -1,0 +1,6 @@
+FROM ubuntu:20.04
+
+
+WORKDIR /usr/metricas
+
+RUN sudo apt install iperf

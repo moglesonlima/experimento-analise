@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    command: 
+      # Indicamos o diretório de trabalho('.' faz referencia ao local atual onde estamos, tudo após os ':' indica o caminho dentro do container WORKDIR)
+    volumes:
+      - ./metricas:/usr/metricas
+    networks:
+      - my-bridge
